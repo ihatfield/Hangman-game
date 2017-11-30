@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hangman Game</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Cousine" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+</head>
+<body>
+
+
+	<div class="container">
+		<div class="row">
+			<h1 id="title">HANGMAN</h1>
+		</div>
+
+		<div class="row" id="content">
+			<div class="col-xs-12 col-sm-8" id="gamePanel">
+				<div class="row" id="imgDiv">
+					<img id="gameImg" src="assets/images/game_state_0.png">
+				</div>
+				<div class="row">
+					<h2 id="displayWord"></h2>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-4" id="sidePanel">
+
+				<div class="row">
+					<h4 id="instructions">Click a letter, or press a key on your keyboard to make a guess.</h4>
+				</div>
+
+				<div class="row" id="alphabet">
+					
+				</div>
+
+				<div class="row" id="scoreboard">
+
+					<h4>Score</h4>
+
+					<section id="scoreCounts">
+						<p>Wins: <span id="winCount">0</span></p>
+						<p>Lossess: <span id="lossCount">0</span></p>
+					</section>
+
+				</div>
+
+			</div>
+		</div>
+
+		<div class="row">
+
+		</div>
+
+	</div>
+
+	<div id="myModal" class="modal">
+
+		<div class="modal-content" id="modalText">
+			<p>Press any key to begin...</p>
+		</div>
+
+	</div>
+
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!-- Hangman Javascript file -->
+	<script type="text/javascript" src="assets/javascript/hangman.js"></script>
+
+</body>
+</html>
